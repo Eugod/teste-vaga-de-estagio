@@ -30,7 +30,7 @@ function encontrarPrimosRecursiva(n) {
 
     const primos = encontrarPrimosRecursiva(n - 1);
 
-    if(ehPrimo(n)) {
+    if (ehPrimo(n)) {
         primos.push(n);
     }
 
@@ -52,7 +52,7 @@ function encontrarPrimosLinear(n) {
     filtro[0] = filtro[1] = false;
 
     for (let p = 2; p * p <= n; p++) {
-        if(filtro[p]) {
+        if (filtro[p]) {
             for (let i = p * p; i <= n; i += p) {
                 filtro[i] = false;
             }

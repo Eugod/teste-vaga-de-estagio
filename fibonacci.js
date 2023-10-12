@@ -28,7 +28,7 @@ function fibLinear(n) {
     let fibN = 0;
     let fibNMenos1 = 1;
     let fibNMenos2 = 0;
-    
+
     for (let i = 2; i <= n; i++) {
         fibN = fibNMenos1 + fibNMenos2;
 
